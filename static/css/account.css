@@ -38,6 +38,24 @@
     border-right: 1px solid var(--gray-2);
 }
 
+.btn{
+    display: flex;
+    align-items: center;
+    padding: .5em 1em .5em .75em;
+    gap: .25em;
+    border-radius: .25em;
+    cursor: pointer;
+}
+
+.btn.premium{
+    color: var(--gray-1);
+}
+
+.btn.stats{
+    color: var(--blue);
+    background-color: var(--gray-2);
+}
+
 .happy{
     background-color: var(--green);
 }

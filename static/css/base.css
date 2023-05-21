@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
 *{
     margin: 0;
     padding: 0;
@@ -7,7 +9,9 @@
 :root{
     --gray-1: rgba(99, 99, 102, 1);
     --gray-2: rgba(44, 44, 46, 1);
+    --gray-3: rgba(28, 28, 30, 1);
     --green: rgba(48, 209, 88, 1);
+    --blue: rgba(10, 132, 255, 1);
 }
 
 html{
@@ -15,7 +19,8 @@ html{
 }
 
 body{
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", ui-system, sans-serif;
+    font-family: 'Inter', sans-serif;
+    background-color: var(--gray-3);
 }
 
 main{

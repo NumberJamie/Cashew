@@ -2,17 +2,17 @@
 {% load static %}
 {% block content %}
     <div class="flex between">
-        <a class="icon"><img src="{% static 'icons/back_arrow.svg' %}" alt="arrow"></a>
+        <a class="icon"><img src="{% static 'icons/back_arrow.svg' %}" alt="arrow" width="24" height="24"></a>
         <div class="flex">
-            <a class="icon"><img src="{% static 'icons/already_friends.svg' %}" alt="friend"></a>
-            <a class="icon"><img src="{% static 'icons/open_menu.svg' %}" alt="menu"></a>
+            <a class="icon"><img src="{% static 'icons/already_friends.svg' %}" alt="friend" width="24" height="24"></a>
+            <a class="icon"><img src="{% static 'icons/open_menu.svg' %}" alt="menu" width="24" height="24"></a>
         </div>
     </div>
     <div class="flex gap center">
         <div class="account-picture">
             <img src="{{ object.picture.url }}" alt="{{ object.username }}" width="112" height="112">
             <div class="status happy">
-                <img src="{% static 'icons/happy.svg' %}" alt="happy">
+                <img src="{% static 'icons/happy.svg' %}" alt="happy" width="24" height="24">
             </div>
         </div>
         <div class="flex column grow small-gap">
@@ -35,5 +35,15 @@
                 </div>
             </div>
         </div>
+    </div>
+    <div class="flex between">
+        <a class="btn stats">
+            <img src="{% static 'icons/stats.svg' %}" alt="stats" width="20" height="20">
+            <small>stats</small>
+        </a>
+        <a class="btn premium">
+            <img src="{% static 'icons/premium_muted.svg' %}" alt="premium" width="20" height="20">
+            <small>become a premium user</small>
+        </a>
     </div>
 {% endblock %}
