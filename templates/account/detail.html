@@ -1,0 +1,39 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+    <div class="flex between">
+        <a class="icon"><img src="{% static 'icons/back_arrow.svg' %}" alt="arrow"></a>
+        <div class="flex">
+            <a class="icon"><img src="{% static 'icons/already_friends.svg' %}" alt="friend"></a>
+            <a class="icon"><img src="{% static 'icons/open_menu.svg' %}" alt="menu"></a>
+        </div>
+    </div>
+    <div class="flex gap center">
+        <div class="account-picture">
+            <img src="{{ object.picture.url }}" alt="{{ object.username }}" width="112" height="112">
+            <div class="status happy">
+                <img src="{% static 'icons/happy.svg' %}" alt="happy">
+            </div>
+        </div>
+        <div class="flex column grow small-gap">
+            <div class="compact">
+                <h3>{{ object.display_name }}</h3>
+                <small class="muted">@{{ object.username }}</small>
+            </div>
+            <div class="flex between account-stats">
+                <div class="flex compact column text-center">
+                    <h4>100</h4>
+                    <small class="muted">friends</small>
+                </div>
+                <div class="flex compact column text-center">
+                    <h4>34</h4>
+                    <small class="muted">posts</small>
+                </div>
+                <div class="flex compact column text-center">
+                    <h4>{{ object.created|date:'m/Y' }}</h4>
+                    <small class="muted">created</small>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}

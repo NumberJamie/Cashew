@@ -1,0 +1,41 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --gray-1: rgba(99, 99, 102, 1);
+    --gray-2: rgba(44, 44, 46, 1);
+    --green: rgba(48, 209, 88, 1);
+}
+
+html{
+    color-scheme: dark;
+}
+
+body{
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", ui-system, sans-serif;
+}
+
+main{
+    width: min(50ch, 100% - 1rem);
+    margin-inline: auto;
+    padding: 1em .5em;
+    display: flex;
+    flex-direction: column;
+    gap: .75em;
+}
+
+a.icon{
+    width: 2em;
+    height: 2em;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.muted{
+    color: var(--gray-1);
+}

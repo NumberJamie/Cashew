@@ -1,0 +1,43 @@
+.account-picture{
+    position: relative;
+}
+
+.account-picture img{
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.account-picture .status{
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.status{
+    width: 2em;
+    height: 2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+
+.compact{
+    line-height: 1;
+}
+
+.account-stats div{
+    display: flex;
+    align-self: center;
+    justify-content: center;
+    height: 3em;
+    flex-basis: calc(100% / 3);
+}
+
+.account-stats div:not(:last-child){
+    border-right: 1px solid var(--gray-2);
+}
+
+.happy{
+    background-color: var(--green);
+}
